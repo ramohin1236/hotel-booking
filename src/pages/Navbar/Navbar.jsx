@@ -1,9 +1,11 @@
 import { FaBus } from "react-icons/fa";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const nav = <>
-    <li className="text-xl font-medium"><a>Rooms</a></li>
+    <Link to='/rooms'> <li className="text-xl font-medium"><a>Rooms</a></li></Link>
+   
     <li className="text-xl font-medium"><a>My Bookings</a></li>
     
     <button className="btn w-36 mr-6 md:mb-2 text-blue-800 font-bold">Sign In</button>

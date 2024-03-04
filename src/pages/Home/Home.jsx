@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import "./Home.css";
 
 import HotelName from './HotelName/HotelName';
+import ImportantLines from './ImportantLines';
 
 const Home = () => {
     return (
@@ -42,6 +43,7 @@ const Home = () => {
             </div>
           
           <HotelName/>
+          <ImportantLines/>
         
         </div>
     );
