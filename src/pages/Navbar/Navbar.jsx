@@ -12,7 +12,7 @@ const Navbar = () => {
     <button className="btn w-36 max-sm:hidden text-blue-800 font-bold">Register</button>
     </>
     return (
-        <div className="navbar my-nav bg-blue-900 text-white h-20 px-8">
+        <div className=" navbar my-nav bg-blue-900 text-white h-20 px-8">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,7 +22,7 @@ const Navbar = () => {
              {nav}
             </ul>
           </div>
-          <a className="btn btn-ghost text-3xl font-bold "><FaBus/> Travel.Com</a>
+          <Link to='/' className="btn btn-ghost text-3xl font-bold "><FaBus/> Travell.Com</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

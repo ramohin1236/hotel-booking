@@ -1,0 +1,323 @@
+[
+    {
+      "booking_id": "101",
+      "location": "Cox's Bazar",
+      "title": "Seaside Resort Deluxe Room",
+      "from_date": "2024-04-10",
+      "to_date": "2024-04-15",
+      "price": 150,
+      "description": "Experience luxury and comfort in this deluxe room with breathtaking views of the sea. Perfect for couples seeking a romantic getaway.",
+
+      "guest": 2,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "https://i.ibb.co/ccYS0FQ/outdoor-patio.jpg",
+      "category": "Deluxe Room",
+      "host": {
+        "name": "Rahim Ahmed",
+        "image": "https://example.com/host_image101.jpg",
+        "email": "rahim.ahmed@example.com"
+      }
+    },
+    {
+      "booking_id": "102",
+      "location": "Cox's Bazar",
+      "title": "Ocean View Suite at Cox's Palace",
+      "from_date": "2024-05-20",
+      "to_date": "2024-05-25",
+      "price": 250,
+      "description": "Indulge in luxury and elegance with this ocean view suite. Relax in style and enjoy stunning vistas of the Bay of Bengal.",
+
+      "guest": 2,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "https://i.ibb.co/ccYS0FQ/outdoor-patio.jpg",
+      "category": "Suite",
+      "host": {
+        "name": "Fatima Khan",
+        "image": "https://example.com/host_image102.jpg",
+        "email": "fatima.khan@example.com"
+      }
+    },
+    {
+      "booking_id": "103",
+      "location": "Cox's Bazar",
+      "title": "Beachfront Villa at Sunrise Resort",
+      "from_date": "2024-06-15",
+      "to_date": "2024-06-20",
+      "price": 300,
+      "description": "Escape to paradise in this beachfront villa. Enjoy direct access to the beach and luxurious amenities for an unforgettable stay.",
+
+      "guest": 4,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "image": "https://i.ibb.co/ccYS0FQ/outdoor-patio.jpg",
+      "category": "Villa",
+      "host": {
+        "name": "Ayesha Rahman",
+        "image": "https://example.com/host_image103.jpg",
+        "email": "ayesha.rahman@example.com"
+      }
+    },
+    {
+      "booking_id": "104",
+      "location": "Cox's Bazar",
+      "title": "Luxury Apartment at Beach Tower",
+      "from_date": "2024-07-10",
+      "to_date": "2024-07-15",
+      "price": 200,
+      "guest": 3,
+      "description": "Live in luxury with this spacious apartment offering stunning sea views. Ideal for families or groups looking for a memorable beach holiday.",
+
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "image": "https://i.ibb.co/ccYS0FQ/outdoor-patio.jpg",
+      "category": "Apartment",
+      "host": {
+        "name": "Kamal Chowdhury",
+        "image": "https://example.com/host_image104.jpg",
+        "email": "kamal.chowdhury@example.com"
+      }
+    },
+    {
+      "booking_id": "105",
+      "location": "Cox's Bazar",
+      "title": "Beachfront Bungalow at Ocean Paradise",
+      "from_date": "2024-08-05",
+      "to_date": "2024-08-10",
+      "price": 350,
+      "guest": 6,
+      "description": "Escape to tranquility in this charming beachfront bungalow. Relax in privacy and enjoy direct access to the sandy shores.",
+
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "image": "https://i.ibb.co/ccYS0FQ/outdoor-patio.jpg",
+      "category": "Bungalow",
+      "host": {
+        "name": "Nadia Islam",
+        "image": "https://example.com/host_image105.jpg",
+        "email": "nadia.islam@example.com"
+      }
+    },
+    {
+      "booking_id": "106",
+      "location": "Cox's Bazar",
+      "title": "Executive Room at Royal Tulip Sea Pearl Beach Resort",
+      "from_date": "2024-09-20",
+      "to_date": "2024-09-25",
+      "price": 180,
+      "guest": 2,
+      "bedrooms": 1,
+      "description": "Experience comfort and sophistication in this executive room. Enjoy modern amenities and personalized services for a relaxing stay.",
+
+      "bathrooms": 1,
+      "image": "https://i.ibb.co/ccYS0FQ/outdoor-patio.jpg",
+      "category": "Executive Room",
+      "host": {
+        "name": "Sana Ahmed",
+        "image": "https://example.com/host_image106.jpg",
+        "email": "sana.ahmed@example.com"
+      }
+    },
+    {
+      "booking_id": "107",
+      "location": "Cox's Bazar",
+      "title": "Deluxe Suite at Sayeman Beach Resort",
+      "from_date": "2024-10-10",
+      "to_date": "2024-10-15",
+      "price": 280,
+      "guest": 3,
+      "bedrooms": 2,
+      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+
+      "bathrooms": 1,
+      "image": "https://i.ibb.co/XkT4BWY/crown.jpg",
+      "category": "Suite",
+      "host": {
+        "name": "Aminul Haque",
+        "image": "https://example.com/host_image107.jpg",
+        "email": "aminul.haque@example.com"
+      }
+    },
+    {
+      "booking_id": "108",
+      "location": "Cox's Bazar",
+      "title": "Beach Villa at Long Beach Hotel",
+      "from_date": "2024-11-05",
+      "to_date": "2024-11-10",
+      "price": 400,
+      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+
+      "guest": 4,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "image": "https://i.ibb.co/XkT4BWY/crown.jpg",
+      "category": "Villa",
+      "host": {
+        "name": "Rehana Khan",
+        "image": "https://example.com/host_image108.jpg",
+        "email": "rehana.khan@example.com"
+      }
+    },
+    {
+      "booking_id": "109",
+      "location": "Cox's Bazar",
+      "title": "Standard Room at Sea Crown Hotel",
+      "from_date": "2024-12-10",
+      "to_date": "2024-12-15",
+      "price": 100,
+      "guest": 2,
+      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "https://i.ibb.co/XkT4BWY/crown.jpg",
+      "category": "Standard Room",
+      "host": {
+        "name": "Imran Khan",
+        "image": "https://example.com/host_image109.jpg",
+        "email": "imran.khan@example.com"
+      }
+    },
+    {
+      "booking_id": "110",
+      "location": "Cox's Bazar",
+      "title": "Superior Room at Seagull Hotel",
+      "from_date": "2025-01-20",
+      "to_date": "2025-01-25",
+      "price": 130,
+      "guest": 2,
+      "bedrooms": 1,
+      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+
+      "bathrooms": 1,
+      "image": "https://i.ibb.co/XkT4BWY/crown.jpg",
+      "category": "Superior Room",
+      "host": {
+        "name": "Ali Ahmed",
+        "image": "https://example.com/host_image110.jpg",
+        "email": "ali.ahmed@example.com"
+      }
+    },
+    {
+      "booking_id": "111",
+      "location": "Cox's Bazar",
+      "title": "Beach Cottage at Seaside Cottage Resort",
+      "from_date": "2025-02-10",
+      "to_date": "2025-02-15",
+      "price": 180,
+      "guest": 2,
+      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "https://i.ibb.co/XkT4BWY/crown.jpg",
+      "category": "Cottage",
+      "host": {
+        "name": "Fahmida Rahman",
+        "image": "https://example.com/host_image111.jpg",
+        "email": "fahmida.rahman@example.com"
+      }
+    },
+    {
+      "booking_id": "112",
+      "location": "Cox's Bazar",
+      "title": "Honeymoon Suite at Mermaid Eco Resort",
+      "from_date": "2025-03-10",
+      "to_date": "2025-03-15",
+      "price": 220,
+      "guest": 2,
+      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "https://i.ibb.co/RQx2gZy/terrace-lounge-with-rattan-armchairs-seaview-luxury-resort-summer-holiday-concept.jpg",
+      "category": "Suite",
+      "host": {
+        "name": "Tariqul Islam",
+        "image": "https://example.com/host_image112.jpg",
+        "email": "tariqul.islam@example.com"
+      }
+    },
+    {
+      "booking_id": "113",
+      "location": "Cox's Bazar",
+      "title": "Family Room at Seacrest Hotel",
+      "from_date": "2025-04-10",
+      "to_date": "2025-04-15",
+      "price": 200,
+      "guest": 4,
+      "bedrooms": 2,
+      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+
+      "bathrooms": 1,
+      "image": "https://i.ibb.co/RQx2gZy/terrace-lounge-with-rattan-armchairs-seaview-luxury-resort-summer-holiday-concept.jpg",
+      "category": "Family Room",
+      "host": {
+        "name": "Javed Khan",
+        "image": "https://example.com/host_image113.jpg",
+        "email": "javed.khan@example.com"
+      }
+    },
+    {
+      "booking_id": "114",
+      "location": "Cox's Bazar",
+      "title": "Executive Suite at Seagreen Hotel",
+      "from_date": "2025-05-10",
+      "to_date": "2025-05-15",
+      "price": 300,
+      "guest": 3,
+      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "image": "https://i.ibb.co/RQx2gZy/terrace-lounge-with-rattan-armchairs-seaview-luxury-resort-summer-holiday-concept.jpg",
+      "category": "Suite",
+      "host": {
+        "name": "Rafiqul Islam",
+        "image": "https://example.com/host_image114.jpg",
+        "email": "rafiqul.islam@example.com"
+      }
+    },
+    {
+      "booking_id": "115",
+      "location": "Cox's Bazar",
+      "title": "Beachfront Chalet at Peninsula Chittagong",
+      "from_date": "2025-06-10",
+      "to_date": "2025-06-15",
+      "price": 350,
+      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+
+      "guest": 2,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "https://i.ibb.co/RQx2gZy/terrace-lounge-with-rattan-armchairs-seaview-luxury-resort-summer-holiday-concept.jpg",
+      "category": "Chalet",
+      "host": {
+        "name": "Farhana Begum",
+        "image": "https://example.com/host_image115.jpg",
+        "email": "farhana.begum@example.com"
+      }
+    },
+    {
+      "booking_id": "116",
+      "location": "Cox's Bazar",
+      "title": "Beachside Tent at Coral Island Resort",
+      "from_date": "2025-07-10",
+      "to_date": "2025-07-15",
+      "price": 120,
+      "guest": 2,
+      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "https://i.ibb.co/RQx2gZy/terrace-lounge-with-rattan-armchairs-seaview-luxury-resort-summer-holiday-concept.jpg",
+      "category": "Tent",
+      "host": {
+        "name": "Salman Khan",
+        "image": "https://example.com/host_image116.jpg",
+        "email": "salman.khan@example.com"
+      }
+    }
+  ]
+  

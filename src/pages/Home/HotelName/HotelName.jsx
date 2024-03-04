@@ -33,11 +33,13 @@ const HotelName = () => {
         1000,
         'For more information and booking for rooms go to "Rooms"',
         
+       
+        
         
         // Types 'One'
        
         () => {
-          console.log('Sequence completed');
+        //   console.log('Sequence completed');
         },
       ]}
       wrapper="span"
