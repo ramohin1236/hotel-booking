@@ -12,7 +12,7 @@
       "bedrooms": 1,
       "bathrooms": 1,
       "image": "https://i.ibb.co/ccYS0FQ/outdoor-patio.jpg",
-      "category": "Deluxe Room",
+      "category": "Executive",
       "host": {
         "name": "Rahim Ahmed",
         "image": "https://example.com/host_image101.jpg",
@@ -22,17 +22,17 @@
     {
       "booking_id": "102",
       "location": "Cox's Bazar",
-      "title": "Ocean View Suite at Cox's Palace",
+      "title": "Ocean View Standard at Cox's Palace",
       "from_date": "2024-05-20",
       "to_date": "2024-05-25",
       "price": 250,
-      "description": "Indulge in luxury and elegance with this ocean view suite. Relax in style and enjoy stunning vistas of the Bay of Bengal.",
+      "description": "Indulge in luxury and elegance with this ocean view Standard. Relax in style and enjoy stunning vistas of the Bay of Bengal.",
 
       "guest": 2,
       "bedrooms": 1,
       "bathrooms": 1,
       "image": "https://i.ibb.co/ccYS0FQ/outdoor-patio.jpg",
-      "category": "Suite",
+      "category": "Standard",
       "host": {
         "name": "Fatima Khan",
         "image": "https://example.com/host_image102.jpg",
@@ -42,17 +42,17 @@
     {
       "booking_id": "103",
       "location": "Cox's Bazar",
-      "title": "Beachfront Villa at Sunrise Resort",
+      "title": "Beachfront Spa at Sunrise Resort",
       "from_date": "2024-06-15",
       "to_date": "2024-06-20",
       "price": 300,
-      "description": "Escape to paradise in this beachfront villa. Enjoy direct access to the beach and luxurious amenities for an unforgettable stay.",
+      "description": "Escape to paradise in this beachfront Spa. Enjoy direct access to the beach and luxurious amenities for an unforgettable stay.",
 
       "guest": 4,
       "bedrooms": 2,
       "bathrooms": 2,
       "image": "https://i.ibb.co/ccYS0FQ/outdoor-patio.jpg",
-      "category": "Villa",
+      "category": "Spa",
       "host": {
         "name": "Ayesha Rahman",
         "image": "https://example.com/host_image103.jpg",
@@ -72,7 +72,7 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "image": "https://i.ibb.co/ccYS0FQ/outdoor-patio.jpg",
-      "category": "Apartment",
+      "category": "Executive",
       "host": {
         "name": "Kamal Chowdhury",
         "image": "https://example.com/host_image104.jpg",
@@ -92,7 +92,7 @@
       "bedrooms": 3,
       "bathrooms": 2,
       "image": "https://i.ibb.co/ccYS0FQ/outdoor-patio.jpg",
-      "category": "Bungalow",
+      "category": "Executive",
       "host": {
         "name": "Nadia Islam",
         "image": "https://example.com/host_image105.jpg",
@@ -112,7 +112,7 @@
 
       "bathrooms": 1,
       "image": "https://i.ibb.co/ccYS0FQ/outdoor-patio.jpg",
-      "category": "Executive Room",
+      "category": "Executive",
       "host": {
         "name": "Sana Ahmed",
         "image": "https://example.com/host_image106.jpg",
@@ -122,17 +122,17 @@
     {
       "booking_id": "107",
       "location": "Cox's Bazar",
-      "title": "Deluxe Suite at Sayeman Beach Resort",
+      "title": "Deluxe Standard at Sayeman Beach Resort",
       "from_date": "2024-10-10",
       "to_date": "2024-10-15",
       "price": 280,
       "guest": 3,
       "bedrooms": 2,
-      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+      "description": "Indulge in luxury and comfort in this deluxe Standard. Relax in style and enjoy stunning views of Cox's Bazar beach.",
 
       "bathrooms": 1,
       "image": "https://i.ibb.co/XkT4BWY/crown.jpg",
-      "category": "Suite",
+      "category": "Standard",
       "host": {
         "name": "Aminul Haque",
         "image": "https://example.com/host_image107.jpg",
@@ -142,17 +142,17 @@
     {
       "booking_id": "108",
       "location": "Cox's Bazar",
-      "title": "Beach Villa at Long Beach Hotel",
+      "title": "Beach Spa at Long Beach Hotel",
       "from_date": "2024-11-05",
       "to_date": "2024-11-10",
       "price": 400,
-      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+      "description": "Indulge in luxury and comfort in this deluxe Standard. Relax in style and enjoy stunning views of Cox's Bazar beach.",
 
       "guest": 4,
       "bedrooms": 3,
       "bathrooms": 2,
       "image": "https://i.ibb.co/XkT4BWY/crown.jpg",
-      "category": "Villa",
+      "category": "Spa",
       "host": {
         "name": "Rehana Khan",
         "image": "https://example.com/host_image108.jpg",
@@ -167,12 +167,12 @@
       "to_date": "2024-12-15",
       "price": 100,
       "guest": 2,
-      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+      "description": "Indulge in luxury and comfort in this deluxe Standard. Relax in style and enjoy stunning views of Cox's Bazar beach.",
 
       "bedrooms": 1,
       "bathrooms": 1,
       "image": "https://i.ibb.co/XkT4BWY/crown.jpg",
-      "category": "Standard Room",
+      "category": "Boutique",
       "host": {
         "name": "Imran Khan",
         "image": "https://example.com/host_image109.jpg",
@@ -188,11 +188,11 @@
       "price": 130,
       "guest": 2,
       "bedrooms": 1,
-      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+      "description": "Indulge in luxury and comfort in this deluxe Standard. Relax in style and enjoy stunning views of Cox's Bazar beach.",
 
       "bathrooms": 1,
       "image": "https://i.ibb.co/XkT4BWY/crown.jpg",
-      "category": "Superior Room",
+      "category": "Boutique",
       "host": {
         "name": "Ali Ahmed",
         "image": "https://example.com/host_image110.jpg",
@@ -207,12 +207,12 @@
       "to_date": "2025-02-15",
       "price": 180,
       "guest": 2,
-      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+      "description": "Indulge in luxury and comfort in this deluxe Standard. Relax in style and enjoy stunning views of Cox's Bazar beach.",
 
       "bedrooms": 1,
       "bathrooms": 1,
       "image": "https://i.ibb.co/XkT4BWY/crown.jpg",
-      "category": "Cottage",
+      "category": "Romantic",
       "host": {
         "name": "Fahmida Rahman",
         "image": "https://example.com/host_image111.jpg",
@@ -222,17 +222,17 @@
     {
       "booking_id": "112",
       "location": "Cox's Bazar",
-      "title": "Honeymoon Suite at Mermaid Eco Resort",
+      "title": "Honeymoon Standard at Mermaid Eco Resort",
       "from_date": "2025-03-10",
       "to_date": "2025-03-15",
       "price": 220,
       "guest": 2,
-      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+      "description": "Indulge in luxury and comfort in this deluxe Standard. Relax in style and enjoy stunning views of Cox's Bazar beach.",
 
       "bedrooms": 1,
       "bathrooms": 1,
       "image": "https://i.ibb.co/RQx2gZy/terrace-lounge-with-rattan-armchairs-seaview-luxury-resort-summer-holiday-concept.jpg",
-      "category": "Suite",
+      "category": "Romantic",
       "host": {
         "name": "Tariqul Islam",
         "image": "https://example.com/host_image112.jpg",
@@ -248,11 +248,11 @@
       "price": 200,
       "guest": 4,
       "bedrooms": 2,
-      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+      "description": "Indulge in luxury and comfort in this deluxe Standard. Relax in style and enjoy stunning views of Cox's Bazar beach.",
 
       "bathrooms": 1,
       "image": "https://i.ibb.co/RQx2gZy/terrace-lounge-with-rattan-armchairs-seaview-luxury-resort-summer-holiday-concept.jpg",
-      "category": "Family Room",
+      "category": "Luxury",
       "host": {
         "name": "Javed Khan",
         "image": "https://example.com/host_image113.jpg",
@@ -262,17 +262,17 @@
     {
       "booking_id": "114",
       "location": "Cox's Bazar",
-      "title": "Executive Suite at Seagreen Hotel",
+      "title": "Executive Standard at Seagreen Hotel",
       "from_date": "2025-05-10",
       "to_date": "2025-05-15",
       "price": 300,
       "guest": 3,
-      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+      "description": "Indulge in luxury and comfort in this deluxe Standard. Relax in style and enjoy stunning views of Cox's Bazar beach.",
 
       "bedrooms": 2,
       "bathrooms": 1,
       "image": "https://i.ibb.co/RQx2gZy/terrace-lounge-with-rattan-armchairs-seaview-luxury-resort-summer-holiday-concept.jpg",
-      "category": "Suite",
+      "category": "Luxury",
       "host": {
         "name": "Rafiqul Islam",
         "image": "https://example.com/host_image114.jpg",
@@ -286,13 +286,13 @@
       "from_date": "2025-06-10",
       "to_date": "2025-06-15",
       "price": 350,
-      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+      "description": "Indulge in luxury and comfort in this deluxe Standard. Relax in style and enjoy stunning views of Cox's Bazar beach.",
 
       "guest": 2,
       "bedrooms": 1,
       "bathrooms": 1,
       "image": "https://i.ibb.co/RQx2gZy/terrace-lounge-with-rattan-armchairs-seaview-luxury-resort-summer-holiday-concept.jpg",
-      "category": "Chalet",
+      "category": "Family",
       "host": {
         "name": "Farhana Begum",
         "image": "https://example.com/host_image115.jpg",
@@ -307,12 +307,12 @@
       "to_date": "2025-07-15",
       "price": 120,
       "guest": 2,
-      "description": "Indulge in luxury and comfort in this deluxe suite. Relax in style and enjoy stunning views of Cox's Bazar beach.",
+      "description": "Indulge in luxury and comfort in this deluxe Standard. Relax in style and enjoy stunning views of Cox's Bazar beach.",
 
       "bedrooms": 1,
       "bathrooms": 1,
       "image": "https://i.ibb.co/RQx2gZy/terrace-lounge-with-rattan-armchairs-seaview-luxury-resort-summer-holiday-concept.jpg",
-      "category": "Tent",
+      "category": "Family",
       "host": {
         "name": "Salman Khan",
         "image": "https://example.com/host_image116.jpg",

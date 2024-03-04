@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
 import { useNavigate, useSearchParams } from "react-router-dom";
@@ -14,7 +15,7 @@ const CategoriesBox = ({label, icon: Icon,selected}) => {
 
        if(params){
         currentQuery = qs.parse(params.toString());
-
+       }
         const updatedQuery ={...currentQuery, category: label}
 
         const url = qs.stringifyUrl({
@@ -22,14 +23,15 @@ const CategoriesBox = ({label, icon: Icon,selected}) => {
             query: updatedQuery,
         })
         navigate(url)
-       }
+       
     }
 
 
     return (
-        <div onClick={handleSearch} className={`flex flex-col items-center justify-center gap-2 p-3 border-b-2 hover:text-neutral-800 transition cursor-pointer ${selected? "border-b-neutral-700 text-neutral-700" : " text-neutral-500"}`}>
+        <div onClick={handleSearch} className={`flex flex-col items-center justify-center gap-2 p-3 border-b-2 hover:text-neutral-800 transition cursor-pointer ${selected? "border-b-neutral-700 text-black" : " text-neutral-500"}`}>
             <Icon size={26}/>
             <div className="text-sm font-medium">{label}</div>
+            
         </div>
     );
 };
