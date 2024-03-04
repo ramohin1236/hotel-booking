@@ -1,4 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 import videohotel from '../../assets/hotel.mp4';
+import { TypeAnimation } from 'react-type-animation';
+
 import "./Home.css";
 const Home = () => {
     return (
@@ -11,8 +14,28 @@ const Home = () => {
            </div>
            </div>
             <div className='content'>
-                <p className='text-3xl font-bold '>This is my website</p>
-                <p className='text-xl '>Room is available</p>
+            <TypeAnimation
+            className='max-sm:text-3xl max-sm:ml-10 text-6xl font-bold ml-24 '
+      sequence={[
+        1000,
+        'Hotels are the longest Sea-Beach area in Bangladesh',
+        1000,
+        "Discover paradise on earth, where golden sands meet azure waters, and every sunset paints a masterpiece at Cox's Bazar.",
+        1000,
+        "Welcome to our at Cox's Bazar.",
+        // Types 'One'
+       
+        () => {
+          console.log('Sequence completed');
+        },
+      ]}
+      wrapper="span"
+      cursor={true}
+      repeat={Infinity}
+     
+    />
+               
+                <p className='text-2xl ml-24 mt-4 max-sm:ml-10 font-semibold'>Enter your dates and choose from 617 hotels and other places to stay!</p>
                 
             </div>
             
