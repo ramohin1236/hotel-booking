@@ -1,8 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import videohotel from '../../assets/hotel.mp4';
 import { TypeAnimation } from 'react-type-animation';
-
 import "./Home.css";
+
+import HotelName from './HotelName/HotelName';
+
 const Home = () => {
     return (
         <div>
@@ -38,7 +40,9 @@ const Home = () => {
                 <p className='text-2xl ml-24 mt-4 max-sm:ml-10 font-semibold'>Enter your dates and choose from 617 hotels and other places to stay!</p>
                 
             </div>
-            
+          
+          <HotelName/>
+        
         </div>
     );
 };

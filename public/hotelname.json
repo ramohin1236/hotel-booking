@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "image": "https://example.com/hotel1.jpg",
+      "hotel_name": "Long Beach Hotel Cox's Bazar",
+      "location": "Marine Drive Road, Kolatoli, Cox's Bazar"
+    },
+    {
+      "id": 2,
+      "image": "https://example.com/hotel2.jpg",
+      "hotel_name": "Hotel Sea Crown",
+      "location": "Marine Drive Road, Kolatoli, Cox's Bazar"
+    },
+    {
+      "id": 3,
+      "image": "https://example.com/hotel3.jpg",
+      "hotel_name": "Royal Tulip Sea Pearl Beach Resort & Spa",
+      "location": "Jaliapalong, Inani Beach, Ukhia, Cox's Bazar"
+    },
+    {
+      "id": 4,
+      "image": "https://example.com/hotel4.jpg",
+      "hotel_name": "Seagull Hotel Cox's Bazar",
+      "location": "Hotel Motel Zone, Cox's Bazar"
+    },
+    {
+      "id": 5,
+      "image": "https://example.com/hotel5.jpg",
+      "hotel_name": "Sayeman Beach Resort",
+      "location": "Marine Drive Road, Kolatoli, Cox's Bazar"
+    },
+    {
+      "id": 6,
+      "image": "https://example.com/hotel6.jpg",
+      "hotel_name": "Hotel The Cox Today",
+      "location": "Plot 7, Road 2, Hotel Motel Zone, Cox's Bazar"
+    },
+    {
+      "id": 7,
+      "image": "https://example.com/hotel7.jpg",
+      "hotel_name": "Praasad Paradise",
+      "location": "Marine Drive, Kolatoli Road, Cox's Bazar"
+    },
+    {
+      "id": 8,
+      "image": "https://example.com/hotel8.jpg",
+      "hotel_name": "Hotel Sea World",
+      "location": "Marine Drive Road, Kolatoli, Cox's Bazar"
+    },
+    {
+      "id": 9,
+      "image": "https://example.com/hotel9.jpg",
+      "hotel_name": "Ocean Paradise Hotel & Resort",
+      "location": "Hotel Motel Zone, Cox's Bazar"
+    },
+    {
+      "id": 10,
+      "image": "https://example.com/hotel10.jpg",
+      "hotel_name": "Hotel Mishuk",
+      "location": "Plot # 3, Block # A, Kolatoli Road, Cox's Bazar"
+    }
+  ]
+  
