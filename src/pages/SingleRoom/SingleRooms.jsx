@@ -55,7 +55,7 @@ const SingleRooms = () => {
             <ImageGallery items={images} />
                 
                  <Header  room={room} subtitle={room.category}/>
-               <div className="flex justify-between max-sm:flex-col">
+               <div className="flex justify-between max-sm:flex-col ">
                     <div className="flex-1">
                         <SingleRoomInfo room={room}/>
                     </div>
