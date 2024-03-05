@@ -8,6 +8,8 @@ import Header from "../../components/SingleRoomInformation/Header";
 import SingleRoomInfo from "../../components/SingleRoomInformation/SingleRoomInfo";
 import Facilities from "../Home/Facilities";
 import RoomInformationo from "./RoomInformationo";
+import Calender from "./Calender";
+import RoomReservation from "./RoomReservation";
 
 
 
@@ -58,8 +60,8 @@ const SingleRooms = () => {
                         <SingleRoomInfo room={room}/>
                     </div>
 
-                    <div className="flex-1">
-                       
+                    <div className="flex-1 ">
+                       <RoomReservation room={room}/>
                     </div>
                </div>
 

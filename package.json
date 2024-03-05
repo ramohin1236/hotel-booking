@@ -13,6 +13,7 @@
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "query-string": "^9.0.0",
     "react": "^18.2.0",
+    "react-date-range": "^2.0.0-alpha.4",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.4",
     "react-icons": "^5.0.1",
