@@ -10,20 +10,26 @@ import { RiPhoneFindLine } from "react-icons/ri";
 const Rooms = () => {
     const [cart,setCart]=useState([])
   const [params, setParams]=useSearchParams();
+  const [loading, setLoading]=useState(false)
   
   const category =params.get('category');
   
         useEffect(()=>{
-            fetch('/public/hoteldata.json')
+            setLoading(true)
+            fetch('/hoteldata.json')
             .then(res=>res.json())
             .then(data=>{
                 if(category){
                     const filtered =data.filter(room=>room.category===category)
                     setCart(filtered)
+                  
                 }
                 else setCart(data)
+                setLoading(false)
             })
         },[category])
+
+        if(loading) return <span className="loading loading-bars loading-lg "></span>
     return (
         <div>
            <Carousell/>

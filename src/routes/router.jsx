@@ -3,6 +3,7 @@ import Home from "../pages/Home/Home";
 import ErrorPage from "../pages/Error/ErrorPage";
 import Main from "../layOuts/Main";
 import Rooms from "../pages/Rooms/Rooms";
+import SingleRooms from "../pages/SingleRoom/SingleRooms";
 
 
 export const router = createBrowserRouter([
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
         {
             path:"/rooms",
             element: <Rooms/>
+        },
+        {
+            path:"/rooms/:id",
+            element: <SingleRooms/>
         },
       ]
     },

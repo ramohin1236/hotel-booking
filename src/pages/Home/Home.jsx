@@ -5,11 +5,14 @@ import "./Home.css";
 
 import HotelName from './HotelName/HotelName';
 import ImportantLines from './ImportantLines';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
     return (
         <div>
-           
+             <Helmet>
+                 <title>Home/Travell.Com</title>
+             </Helmet>
            <div className="">
            <video   className=" " src={videohotel} autoPlay loop muted/>
            <div style={{ backgroundColor: 'rgba(0, 0, 255, 0.6)' }} className='absolute  '>
