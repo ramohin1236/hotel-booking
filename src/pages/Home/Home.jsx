@@ -6,6 +6,9 @@ import "./Home.css";
 import HotelName from './HotelName/HotelName';
 import ImportantLines from './ImportantLines';
 import { Helmet } from 'react-helmet-async';
+import Facilities from './Facilities';
+import HotelEco from '../../components/Home/HotelEco';
+import Container from '../../components/Shared/Container';
 
 const Home = () => {
     return (
@@ -46,6 +49,13 @@ const Home = () => {
             </div>
           
           <HotelName/>
+          <Container>
+          <p className="text-4xl text-blue-700 font-bold mb-16 mt-12">Facilities of Hotel Booking.Com</p> 
+
+          </Container>
+            <Facilities />
+            <HotelEco/>
+
           <ImportantLines/>
         
         </div>

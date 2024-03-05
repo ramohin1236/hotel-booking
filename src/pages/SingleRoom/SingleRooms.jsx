@@ -4,6 +4,10 @@ import Container from "../../components/Shared/Container";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
+import Header from "../../components/SingleRoomInformation/Header";
+import SingleRoomInfo from "../../components/SingleRoomInformation/SingleRoomInfo";
+import Facilities from "../Home/Facilities";
+import RoomInformationo from "./RoomInformationo";
 
 
 
@@ -45,8 +49,34 @@ const SingleRooms = () => {
                 <Helmet>
                     <title>{room?.title}</title>
                 </Helmet>
+                
             <ImageGallery items={images} />
-            <p>{room?.title}</p>
+                
+                 <Header  room={room} subtitle={room.category}/>
+               <div className="flex justify-between max-sm:flex-col">
+                    <div className="flex-1">
+                        <SingleRoomInfo room={room}/>
+                    </div>
+
+                    <div className="flex-1">
+                       
+                    </div>
+               </div>
+
+               <div>
+                    <Facilities/>
+               </div>
+                
+
+                <div>
+                    <RoomInformationo room={room}/>
+                </div>
+
+
+
+
+
+
             </Container>
         </div>
     );

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const RoomsCart = ({item}) => {
     console.log(item);
-    const {booking_id,image,title,location,description,price}=item
+    const {booking_id,image,title,location,price}=item
    
     return (
         <Container>
@@ -19,7 +19,7 @@ const RoomsCart = ({item}) => {
    
     </h2>
     <p className="font-semibold text-xl">{location}</p>
-    <p className="text-slate-500">{description}</p>
+   
     <p className="font-bold text-2xl">${price} /night</p>
    
   </div>
