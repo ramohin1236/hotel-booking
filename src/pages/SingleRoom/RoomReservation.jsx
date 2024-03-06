@@ -1,9 +1,14 @@
 /* eslint-disable react/prop-types */
 import { formatDistance } from "date-fns";
 import Calender from "./Calender";
+import { useState } from "react";
 
 const RoomReservation = ({room}) => {
-
+     const [value, setValue] =useState({
+        startDate : new Date(room.from_date),
+        endDate: new Date(room.to_date),
+        key: 'selection'
+     })
     let totalPrice = 0; // Declare totalPrice outside of the block scope
 
     if (room?.to_date && room?.from_date) {
@@ -24,7 +29,7 @@ const RoomReservation = ({room}) => {
             </div>
             
             <div className="flex justify-center">
-               <Calender/>
+               <Calender value={value}/>
             </div>
             <div className=" text-center mt-4">
             <button className="btn bg-blue-500 text-white hover:bg-blue-700 w-52  h-12">Reserve</button>

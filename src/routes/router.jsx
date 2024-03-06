@@ -4,6 +4,7 @@ import ErrorPage from "../pages/Error/ErrorPage";
 import Main from "../layOuts/Main";
 import Rooms from "../pages/Rooms/Rooms";
 import SingleRooms from "../pages/SingleRoom/SingleRooms";
+import Login from "../pages/Login/Login";
 
 
 export const router = createBrowserRouter([
@@ -26,4 +27,8 @@ export const router = createBrowserRouter([
         },
       ]
     },
+    {
+        path: "/login",
+        element: <Login/>
+    }
   ]);

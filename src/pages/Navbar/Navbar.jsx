@@ -8,7 +8,7 @@ const Navbar = () => {
    
     <li className="text-xl font-medium"><a>My Bookings</a></li>
     
-    <button className="btn w-36 mr-6 md:mb-2 text-blue-800 font-bold">Sign In</button>
+    <Link to="login" className="btn w-36 mr-6 md:mb-2 text-blue-800 font-bold">Sign In</Link>
     <button className="btn w-36 max-sm:hidden text-blue-800 font-bold">Register</button>
     </>
     return (
