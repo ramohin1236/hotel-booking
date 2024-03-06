@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.3",
+    "axios": "^1.6.7",
     "date-fns": "^3.3.1",
+    "firebase": "^10.8.1",
     "query-string": "^9.0.0",
     "react": "^18.2.0",
     "react-date-range": "^2.0.0-alpha.4",

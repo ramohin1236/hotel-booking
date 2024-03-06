@@ -1,3 +1,5 @@
+import axios from "axios";
+import { imageUpload } from "../../api/utils";
 
 
 
@@ -8,9 +10,11 @@ const Reg = () => {
          const name=form.name.value;
          const email=form.email.value;
          const password=form.password.value;
-         const image=form.image.files
-         console.log({name,email,password,image});
-         console.log(image);
+         const image=form.image.files[0]
+        
+         const imageData = await imageUpload(image)
+         console.log(imageData);
+        
     }
     return (
         <div className="hero-content flex-col ">
@@ -36,7 +40,8 @@ const Reg = () => {
   
   </div>
   <input 
-  name="image" 
+  name="image"
+  accept="image/*" 
   type="file" 
   id="image"
   className="file-input file-input-bordered w-full max-w-xs" />
