@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
 import { DateRange } from 'react-date-range';
 
-const Calender = (value) => {
+const Calender = ({value}) => {
+    console.log(value);
     return( 
     <DateRange
-    rangeColors={['#F43F5E']}
+    ranges={[value]}
+    // rangeColors={['#F43F5E']}
     direction='vertical'
     showDateDisplay={false}
     />

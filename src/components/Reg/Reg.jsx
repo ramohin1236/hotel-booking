@@ -1,9 +1,20 @@
-import axios from "axios";
+
 import { imageUpload } from "../../api/utils";
+import useAuth from "../hooks/useAuth";
+import { getToken, saveUser } from "../../api/auth";
+import { toast } from 'react-hot-toast';
+import { useNavigate } from "react-router-dom";
+import { ImSpinner9 } from "react-icons/im";
+
 
 
 
 const Reg = () => {
+   
+    const {createUser,updateUserProfile,loading}
+     =useAuth()
+
+    const navigate =useNavigate()
     const handleSignUp =async(event)=>{
          event.preventDefault()
          const form = event.target;
@@ -12,8 +23,30 @@ const Reg = () => {
          const password=form.password.value;
          const image=form.image.files[0]
         
-         const imageData = await imageUpload(image)
-         console.log(imageData);
+         
+         
+         try{
+            // upload image
+            const imageData = await imageUpload(image);
+
+            // user registration
+            const result = await createUser(email,password);
+
+            // save userName & photo
+            await updateUserProfile(name, imageData?.data?.display_url) 
+            
+    // save user daata in database
+            const dbResponse = await saveUser(result?.user)
+            console.log(dbResponse);
+
+            // get token form user
+            await getToken(result?.user?.email)
+            navigate("/rooms")
+            toast.success('User Create Successfully!')
+           
+         }catch(err){
+             toast.error(err?.message)
+         }
         
     }
     return (
@@ -65,7 +98,9 @@ const Reg = () => {
             
             </div>
             <div className="form-control mt-6">
-              <button className="btn bg-blue-800 hover:bg-blue-900 text-white">Registration</button>
+              <button className="btn bg-blue-800 hover:bg-blue-900 text-white">
+                {loading ?  <ImSpinner9 className="animate-spin m-auto"/> : "Registration"}
+              </button>
             </div>
           </form>
         </div>

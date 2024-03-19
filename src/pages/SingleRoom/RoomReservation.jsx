@@ -1,14 +1,27 @@
 /* eslint-disable react/prop-types */
+
 import { formatDistance } from "date-fns";
 import Calender from "./Calender";
+import { useEffect } from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const RoomReservation = ({room}) => {
+    console.log(room?.from_date);
      const [value, setValue] =useState({
-        startDate : new Date(room.from_date),
-        endDate: new Date(room.to_date),
+        startDate: room && room.from_date ? new Date(room.from_date) : null,
+    endDate: room && room.to_date ? new Date(room.to_date) : null,
         key: 'selection'
      })
+
+     useEffect(() => {
+        setValue({
+          startDate: room && room.from_date ? new Date(room.from_date) : null,
+          endDate: room && room.to_date ? new Date(room.to_date) : null,
+          key: 'selection'
+        });
+      }, [room]);
+    
     let totalPrice = 0; // Declare totalPrice outside of the block scope
 
     if (room?.to_date && room?.from_date) {
@@ -32,11 +45,11 @@ const RoomReservation = ({room}) => {
                <Calender value={value}/>
             </div>
             <div className=" text-center mt-4">
-            <button className="btn bg-blue-500 text-white hover:bg-blue-700 w-52  h-12">Reserve</button>
+            <Link to='/reserve'><button className="btn bg-blue-500 text-white hover:bg-blue-700 w-52  h-12">Reserve</button></Link>
             </div>
             <div className="flex justify-evenly mt-6">
                 <p className="text-xl font-bold">Total Price:</p>
-                <p className="font-bold text-2xl"> ${totalPrice}</p>
+                <p className="font-bold text-2xl"> $ {totalPrice}</p>
             </div>
            
         </div>

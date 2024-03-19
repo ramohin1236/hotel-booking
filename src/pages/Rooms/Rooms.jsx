@@ -4,8 +4,9 @@ import { useEffect } from "react";
 import { useState } from "react";
 import RoomsCart from "./RoomsCart";
 import Categories from "./Categories";
-import { useSearchParams } from "react-router-dom";
+import { useLoaderData, useSearchParams } from "react-router-dom";
 import { RiPhoneFindLine } from "react-icons/ri";
+import { getAllRooms } from "../../api/rooms";
 
 const Rooms = () => {
     const [cart,setCart]=useState([])
@@ -14,10 +15,11 @@ const Rooms = () => {
   
   const category =params.get('category');
   
+ 
+
         useEffect(()=>{
             setLoading(true)
-            fetch('/hoteldata.json')
-            .then(res=>res.json())
+            getAllRooms()
             .then(data=>{
                 if(category){
                     const filtered =data.filter(room=>room.category===category)

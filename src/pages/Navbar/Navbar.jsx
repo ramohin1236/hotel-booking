@@ -1,15 +1,20 @@
 import { FaBus } from "react-icons/fa";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import useAuth from "../../components/hooks/useAuth";
 
 const Navbar = () => {
+    const {user,logOut} = useAuth();
+
+
     const nav = <>
     <Link to='/rooms'> <li className="text-xl font-medium"><a>Rooms</a></li></Link>
    
     <li className="text-xl font-medium"><a>My Bookings</a></li>
     
-    <Link to="login" className="btn w-36 mr-6 md:mb-2 text-blue-800 font-bold">Sign In</Link>
-    <button className="btn w-36 max-sm:hidden text-blue-800 font-bold">Register</button>
+    {
+        user && user? "": <Link to="login" className="btn w-36 mr-6 md:mb-2 text-blue-800 font-bold">Sign In</Link>
+    }
     </>
     return (
         <div className=" navbar my-nav bg-blue-900 text-white h-20 px-8">
@@ -29,25 +34,25 @@ const Navbar = () => {
             {nav}
           </ul>
         </div>
-        <div className="navbar-end">
+        
+     {
+        user && user?<div className="navbar-end">
         <div className="dropdown dropdown-end ">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-30 rounded-full">
           <img  alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
         </div>
-      </div>
-      <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-black rounded-box w-52">
+      </div>  <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-black rounded-box w-52">
         <li>
-          <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
-          </a>
+        <Link to='/dashboard' className="btn btn-ghost hover:text-blue-700 font-bold ">Dashboard</Link>
+        
         </li>
         <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
-      </ul>
-    </div>
-        </div>
+        <li><a onClick={logOut}>Logout</a></li>
+      </ul></div> </div> : ""
+     }
+    
+       
       </div>
     );
 };
