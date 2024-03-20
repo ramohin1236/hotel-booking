@@ -13,7 +13,7 @@ import RoomReservation from "./RoomReservation";
 
 const SingleRooms = () => {
           const room = useLoaderData()
-     console.log(room);
+     console.log("Single room paise",room);
      
        const images = [
         {

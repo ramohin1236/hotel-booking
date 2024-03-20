@@ -8,13 +8,22 @@ import { BsDoorOpenFill } from "react-icons/bs";
 import { TbBrandBooking } from "react-icons/tb";
 import { IoIosSettings } from "react-icons/io";
 import { CiLogout } from "react-icons/ci";
+import useAuth from "../../components/hooks/useAuth";
+import { useNavigate } from "react-router-dom";
+import useRole from "../../components/hooks/useRole";
+import HostMenu from "../../components/Dashboard/HostMenu";
+import GuestMenu from "../../components/Dashboard/GuestMenu";
+import AdminMenu from "../../components/Dashboard/AdminMenu";
 
 
 
 const Sidebar = () => {
+    const {logOut}=useAuth();
+    const navigate= useNavigate()
     const [toggle, setToggle] = useState(false);
     const [isActive, setActive] = useState(false);
-
+ const [role]=useRole();
+ console.log(role);
     console.log(toggle);
 
     const toggleHandler =( event) => {
@@ -49,35 +58,30 @@ const Sidebar = () => {
             <p>Booking.com</p>
         </div>
         <div className="flex  flex-col justify-between flex-1 mt-6">
- <Togggle toggleHandler={toggleHandler}/>
+ {
+    role === 'host'&&  <Togggle toggleHandler={toggleHandler}/>
+ }
                 <nav>
                     <MenuItem
                     label={"Statistics"}
                     icon={BsGraphUp}
                     address={'/dashboard'}
                     />
-                    <MenuItem
-                    label={"Add Room"}
-                    icon={BsDoorOpenFill}
-                    address={'add-room'}
-                    />
-                    <MenuItem
-                    label={"My Listing"}
-                    icon={FaHome}
-                    address={'listing'}
-                    />
-                    <MenuItem
-                    label={"Manage Bookings"}
-                    icon={TbBrandBooking}
-                    address={'m-bookings'}
-                    />
+
+                    {role === 'host'? toggle?  <HostMenu/> : <GuestMenu/>: ""}
+                    {/* {role === 'guest' &&  <GuestMenu/>} */}
+                    {role === 'admin' &&  <AdminMenu/>}
+                   
+                   
                 </nav>
 </div>
     </div>
     <br />
 
                  <div>
-                 <button className="flex w-full items-center px-4  text-gray-600 hover:bg-gray-300
+                 <button
+                 onClick={logOut}
+                 className="flex w-full items-center px-4  text-gray-600 hover:bg-gray-300
   hover:text-gray-500
  ">
 <CiLogout  className="w-5  text-gray-900 "/><span className="ml-4 font-medium">Log Out</span>
