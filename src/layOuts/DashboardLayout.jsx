@@ -11,7 +11,7 @@ const DashboardLayout = () => {
              <Sidebar/>
              </div>
         
-            <div className="md:ml-96 mt-24 ml-6">
+            <div className="md:ml-96 mt-24 ml-6 ">
                
                 {/* {outlet for dianamic contert} */}
                   <Outlet/>

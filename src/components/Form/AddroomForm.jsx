@@ -101,7 +101,7 @@ const AddroomForm = ({ handleSubmit,dates, handleDates}) => {
 
      </div>
      
-     <button type="submit" className="w-full mt-6 btn btn-active bg-blue-600 hover:bg-blue-800 text-white">Save & Upload</button>
+     <button type="submit" className="w-full mt-6 mb-24 btn btn-active bg-blue-600 hover:bg-blue-800 text-white">Save & Upload</button>
             </form>
         </div>
     );

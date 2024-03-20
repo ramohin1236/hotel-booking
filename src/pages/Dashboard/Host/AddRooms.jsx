@@ -1,11 +1,16 @@
+/* eslint-disable no-unused-vars */
 import { Helmet } from "react-helmet";
 import AddroomForm from "../../../components/Form/AddroomForm";
 import { useState } from "react";
 import { imageUpload } from './../../../api/utils';
 import useAuth from './../../../components/hooks/useAuth';
+import { addRooms } from "../../../api/rooms";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 
 const AddRooms = () => {
+    const navigate =useNavigate()
     const {user}= useAuth()
     const [loading, setLoading]=useState(false)
     const [uploadButtonText, setuploadButtonText]=useState("Upload Image")
@@ -17,6 +22,7 @@ const AddRooms = () => {
 
 
     const handleSubmit =async(e)=>{
+        setLoading(true)
         e.preventDefault();
        
         const form = e.target;
@@ -54,6 +60,22 @@ const AddRooms = () => {
             image:image_url?.data?.display_url,
             host
         }
+
+        try{
+            
+            const data = await addRooms(roomsData)
+            console.log(data);
+            toast.success("Rooms Added")
+            navigate('/dashboard/listing')
+            
+        }
+        catch(err){
+            toast.error(err.message)
+            console.log(err);
+        }finally{
+            setLoading(false)
+        }
+
 
         console.log(roomsData);
 

@@ -56,7 +56,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'listing',
-                element:<MyListing/>
+                element:<PrivateRoutes><MyListing/></PrivateRoutes>
             },
             {
                 path: 'm-bookings',
